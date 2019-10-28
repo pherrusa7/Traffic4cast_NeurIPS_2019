@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 
-DAYS_INFO_PATH, REGIONS = '/home/pherruzo/projects/nips_traffic/models/1_regions_features_mean.npy', 1 # data aggregated for the whole city
+DAYS_INFO_PATH, REGIONS = 'agg_data/1_regions_features_mean.npy', 1 # data aggregated for the whole city
 
 ###################################################### DATA PREPROCESSING PARAMETERS
 MM, TIME_SLOT = 60, 5 # In minutes
