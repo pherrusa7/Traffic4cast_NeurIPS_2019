@@ -2,6 +2,12 @@
 
 This is the implementation of the paper "Recurrent Autoencoder with Skip Connections and Exogenous Variables for Traffic Forecasting" submitted to the Traffic4cast Challenge 2019 at NeurIPS (https://www.iarai.ac.at/traffic4cast/).
 
+## Documentation
+Our documentation is available in [arxiv](https://arxiv.org/abs/1910.13295)!
+
+Very soon a full paper will be available in the [Proceedings of Machine Learning Research. PMLR, 2020](http://proceedings.mlr.press/).
+
+## Summary
 Given a sequence of frames of length q in {1,2, ..., 12} in a video, it can predict the next 3 consecutive frames. 
 
 ![](images/new_model.png)
@@ -11,7 +17,7 @@ dimensional space. Frames Loss and skip connections from sibling layers in the e
 the decoder to produce outputs with high definition. Exogenous variables are concatenated with the
 encoder output plus a fully connected layer before recurrent layers. 
 
-# Training
+## Training
 
 * The notebook 'Train.ipynb' can be used to train any model except the one explained bellow, evaluate them, and even generate a submission for the challenge with the proper format.
 * The notebook 'train-RAE_Clf' allows training the model called in the paper as 'RAE_Clf'
@@ -24,6 +30,8 @@ encoder output plus a fully connected layer before recurrent layers.
     * charts: Contains functions to plot aggregated traffic
     * losses.py: Contains loss functions definition and methods to compute the performance of the models
 
+## Cite
+Pedro Herruzo and Josep L. Larriba-Pey. Recurrent autoencoder with skip connections and exogenous variables for traffic forecasting. In Hugo Jair Escalante and Raia Hadsel, editors, Post proceedings of the NeurIPS2019 Demonstration and Competition Track, submitted, 2020, Proceedings of Machine Learning Research. PMLR, 2020.
 
-# Contact
+## Contact
 If you need help, links to the dataset, or scripts to download the exogenous data, do not hesitate to contact us: pherruzo@ac.upc.edu
