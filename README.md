@@ -5,7 +5,7 @@ This is the implementation of the paper "Recurrent Autoencoder with Skip Connect
 ## Documentation
 Our documentation is available in [arxiv](https://arxiv.org/abs/1910.13295)!
 
-Very soon a full paper will be available in the [Proceedings of Machine Learning Research. PMLR, 2020](http://proceedings.mlr.press/).
+A full paper is now available in the [Proceedings of Machine Learning Research. PMLR, 2020](http://proceedings.mlr.press/v123/herruzo20a.html).
 
 ## Summary
 Given a sequence of frames of length q in {1,2, ..., 12} in a video, it can predict the next 3 consecutive frames. 
@@ -31,7 +31,13 @@ encoder output plus a fully connected layer before recurrent layers.
     * losses.py: Contains loss functions definition and methods to compute the performance of the models
 
 ## Cite
-Pedro Herruzo and Josep L. Larriba-Pey. Recurrent autoencoder with skip connections and exogenous variables for traffic forecasting. In Hugo Jair Escalante and Raia Hadsel, editors, Post proceedings of the NeurIPS2019 Demonstration and Competition Track, submitted, 2020, Proceedings of Machine Learning Research. PMLR, 2020.
+
+When referencing **Recurrent Autoencoder with Skip Connections and Exogenous Variables for Traffic Forecasting**, please cite [this
+paper](http://proceedings.mlr.press/v123/herruzo20a.html).
+
+```
+@InProceedings{pmlr-v123-herruzo20a, title = {Recurrent Autoencoder with Skip Connections and Exogenous Variables for Traffic Forecasting}, author = {Herruzo, Pedro and Larriba-Pey, Josep L.}, pages = {47--55}, year = {2020}, editor = {Hugo Jair Escalante and Raia Hadsell}, volume = {123}, series = {Proceedings of Machine Learning Research}, address = {Vancouver, CA}, month = {08--14 Dec}, publisher = {PMLR}, pdf = {http://proceedings.mlr.press/v123/herruzo20a/herruzo20a.pdf}, url = {http://proceedings.mlr.press/v123/herruzo20a.html}, abstract = {The increasing complexity of mobility plus the growing population in cities, together with the importance of privacy when sharing data from vehicles or any device, makes traffic forecasting that uses data from infrastructure and citizens an open and challenging task. In this paper, we introduce a novel approach to deal with predictions of volume, speed and main traffic direction, in a new aggregated way of traffic data presented as videos. Our approach leverages the continuity in a sequence of frames, learning to embed them into a low dimensional space with an encoder and making predictions there using recurrent layers, ensuring good performance through an embedded loss, and then, recovering back spatial dimensions with a decoder using a second loss at a pixel level. Exogenous variables like weather, time and calendar are also added in the model. Furthermore, we introduce a novel sampling approach for sequences that ensures diversity when creating batches, running in parallel to the optimization process.} }
+```
 
 ## Contact
 If you need help, links to the dataset, or scripts to download the exogenous data, do not hesitate to contact us: pherruzo@ac.upc.edu
